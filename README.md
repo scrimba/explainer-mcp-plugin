@@ -20,18 +20,7 @@ The plugin follows the Agent Plugins open standard, so it loads unchanged in any
 
 ## Test locally in Cursor
 
-Cursor loads plugins from `~/.cursor/plugins/local` during development. Copy this repo there (Cursor's docs suggest symlinking, but as of Cursor 3.15.6 the loader rejects symlinks pointing outside `~/.cursor/plugins/local`, so a real copy is required):
-
-```sh
-mkdir -p ~/.cursor/plugins/local
-rsync -a --exclude .git ./ ~/.cursor/plugins/local/scrimba-explain/
-```
-
-Then run **Developer: Reload Window** (a full restart is not needed — the plugin folder is rescanned on reload) and check **Customize** in the sidebar — the `scrimba-explain` plugin, its MCP server, and its skill should appear. Ask the agent for "an explainer of X on Scrimba" to try it.
-
-After editing plugin files, re-run the `rsync` and reload again.
-
-To remove: `rm -rf ~/.cursor/plugins/local/scrimba-explain` and reload.
+Open **Customize** in the sidebar → **Plugins** → **+ Add** → **From Local Repo** and pick this folder. Ask the agent for "an explainer of X on Scrimba" to try it.
 
 ## Formats in this repo
 
