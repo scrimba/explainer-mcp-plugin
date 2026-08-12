@@ -40,7 +40,7 @@ The repo is dual-format — the files are additive and don't conflict:
 /plugin install scrimba-explain@scrimba
 ```
 
-**Any supported agent** via the [`plugins`](https://skills.sh) installer (auto-detects Claude Code, Cursor, Codex, Copilot, and 20+ others):
+**Other agents, one command** — Vercel's [`plugins` CLI](https://www.npmjs.com/package/plugins) reads this repo, detects which agent tools are installed on your machine (Claude Code, Cursor, Codex, Grok Build, Kimi Code, GitHub Copilot CLI, VS Code), and installs the plugin into each one in its native format:
 
 ```sh
 npx plugins add scrimba/explainer-mcp-plugin
