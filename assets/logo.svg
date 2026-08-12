@@ -1,9 +1,5 @@
-<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="512" height="512" rx="64" fill="#000000"/>
-  <g transform="translate(90.5 76.9) scale(2.6)">
-    <path d="M117 30.7H69c-5.7 0-10.4 4.7-10.4 10.5v2.7c0 5.8 4.7 10.4 10.5 10.4h48c5.7 0 10.4-4.6 10.4-10.4v-2.7c0-5.8-4.7-10.5-10.4-10.5z" fill="#c7b9ff"/>
-    <path d="M91.1 58.7H67.7a9 9 0 00-9.1 9V70c0 5 4 9.1 9 9.1h23.5c5 0 9-4 9-9v-2.4c0-5-4-9-9-9z" fill="#e1f0e5"/>
-    <path d="M89.7 83.4h-48c-5.8 0-10.4 4.7-10.4 10.5v2.6c0 5.8 4.6 10.5 10.4 10.5h48c5.8 0 10.5-4.7 10.5-10.5V94c0-5.8-4.7-10.5-10.5-10.5z" fill="#f5e6db"/>
-    <path d="M13.5 83.4h-3C4.7 83.4 0 88.1 0 94v2.6c0 5.8 4.7 10.5 10.5 10.5h3c5.8 0 10.4-4.7 10.4-10.5V94c0-5.8-4.6-10.5-10.4-10.5z" fill="#f5e6db"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="none" preserveAspectRatio="xMidYMid meet" version="1.2" baseProfile="tiny-ps" xml:space="preserve"><title>Brand logo</title>
+  <rect width="1024" height="1024" fill="#35363A"/>
+  <path d="M512 384L256 384V512H128L128 640H384V512H512V384Z" fill="white"/>
+  <path d="M896 384L768 384V512H640V640H896V384Z" fill="white"/>
 </svg>

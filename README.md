@@ -11,7 +11,7 @@ The plugin follows the Agent Plugins open standard, so it loads unchanged in any
 | `plugin.json` | Plugin manifest (Agent Plugins 1.0.0 standard) |
 | `mcp.json` | Declares the remote `scrimba-explain` MCP server at `https://scrimba.com/mcp/explain` (Streamable HTTP, no auth). The non-www URL is used because `www.scrimba.com` 301-redirects to the apex domain, and some MCP clients don't follow redirects on POST. |
 | `skills/scrimba-explain/SKILL.md` | Skill that teaches the agent when and how to create explainers |
-| `assets/logo.svg` / `assets/logo.png` | Plugin logo — the Scrimba glyph (brand colors from `scrimba-next/assets/logo.png`) on a black rounded square, matching the official avatar. The PNG is a 512×512 render for the marketplace. Note: the Agent Plugins 1.0.0 `plugin.json` schema has no `logo` field (it's a closed schema), so the logo is referenced at marketplace-submission time rather than from the manifest. |
+| `assets/logo.svg` / `assets/logo.png` | Plugin logo — a copy of Scrimba's official brand icon, canonically served at `https://scrimba.com/static/brand/icon.svg` (use that URL wherever a hosted logo link is asked for, e.g. Cursor's marketplace submission form). The PNG is a 512×512 render for repo-relative references. Note: the Agent Plugins 1.0.0 `plugin.json` schema has no `logo` field (it's a closed schema), so the logo is referenced at marketplace-submission time rather than from the manifest. |
 
 ## Tools provided by the MCP server
 
