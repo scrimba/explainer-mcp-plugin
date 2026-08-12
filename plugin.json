@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "scrimba-explain",
   "version": "0.1.0",
-  "description": "Scrimba Explain — turn anything into a rich visual explainer with narration, diagrams, and code walkthroughs, rendered live on scrimba.com.",
+  "description": "Scrimba Video Explainer — ask your agent to explain any code, concept, architecture, git branch, or PR, and get an instant video with narration, animations, diagrams, maths, and diffs, rendered live at a shareable scrimba.com link.",
   "author": {
     "name": "Scrimba",
     "url": "https://scrimba.com"
