@@ -1,0 +1,15 @@
+{
+  "name": "scrimba",
+  "description": "Official Scrimba plugins for AI agents.",
+  "owner": {
+    "name": "Scrimba",
+    "url": "https://scrimba.com"
+  },
+  "plugins": [
+    {
+      "name": "scrimba-explain",
+      "source": "./",
+      "description": "Scrimba Explain — turn anything into a rich visual explainer with narration, diagrams, and code walkthroughs, rendered live on scrimba.com."
+    }
+  ]
+}

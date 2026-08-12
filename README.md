@@ -33,6 +33,20 @@ After editing plugin files, re-run the `rsync` and reload again.
 
 To remove: `rm -rf ~/.cursor/plugins/local/scrimba-explain` and reload.
 
-## Publish
+## Formats in this repo
 
-When ready, submit the repo at [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish), or distribute it as a Git repository through a team marketplace.
+The repo is dual-format — the files are additive and don't conflict:
+
+- **Agent Plugins standard** ([agent-plugins.org](https://agent-plugins.org), v1.0.0): root `plugin.json` + `mcp.json` + `skills/`. Loaded natively by Cursor, and by the standard's launch clients (ChatGPT, Codex, GitHub Copilot, Kiro, VS Code) through their own install flows.
+- **Claude Code plugin**: `.claude-plugin/plugin.json` + `.mcp.json` + the same `skills/`. `.claude-plugin/marketplace.json` also makes the repo itself an installable marketplace: `/plugin marketplace add scrimba/<repo>` then `/plugin install scrimba-explain@scrimba`. Validate with `claude plugin validate .`.
+
+## Distribution channels
+
+Once the repo is public on GitHub:
+
+| Channel | How |
+|---------|-----|
+| Cursor Marketplace | Submit at [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish) (manual review; logo required) |
+| Claude Code | Works immediately via `/plugin marketplace add scrimba/<repo>`; optionally submit to the community marketplace at [platform.claude.com/plugins/submit](https://platform.claude.com/plugins/submit) |
+| Vercel `plugins` / skills.sh ecosystem | Works immediately via `npx plugins add scrimba/<repo>` (auto-installs into Claude Code, Cursor, Codex, Copilot, and 20+ agents); [skills.sh](https://skills.sh) leaderboard tracks installs |
+| MCP registries (server-level) | The remote server itself can be listed on the official [MCP Registry](https://registry.modelcontextprotocol.io) (needs `server.json` + domain verification, a scrimba.com-side task) and community registries (Smithery, Glama, PulseMCP, mcp.so, cursor.directory) |
