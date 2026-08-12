@@ -4,22 +4,27 @@ Connects your coding agent to Scrimba Video Explainer: allows you to ask your ag
 
 ## Install
 
-**Claude Code**
+### $Claude Code
 
 ```
 /plugin marketplace add scrimba/explainer-mcp-plugin
 /plugin install scrimba-explain@scrimba
 ```
 
-**Other agents** — one command that installs into every agent tool it finds on your machine (Cursor, Codex, Copilot CLI, VS Code, …):
+### Other agents
+One command that installs into every agent tool it finds on your machine (Cursor, Codex, Copilot CLI, VS Code, …):
 
 ```sh
 npx plugins add scrimba/explainer-mcp-plugin
 ```
 
-**Cursor Marketplace** — coming; not yet listed. Until then use the command above, or clone this repo and add it via **Customize → Plugins → + Add → From Local Repo**.
+### Cursor Marketplace
 
-**Plain MCP** — no plugin needed: add `https://scrimba.com/mcp/explain` (Streamable HTTP, no auth) to any MCP client. Same tools, minus the bundled skill.
+Coming; not yet listed. Until then use the command above, or clone this repo and add it via **Customize → Plugins → + Add → From Local Repo**.
+
+### Plain MCP
+
+No plugin needed: add `https://scrimba.com/mcp/explain` (Streamable HTTP, no auth) to any MCP client. Same tools, minus the bundled skill.
 
 ## What's in the plugin
 
