@@ -27,15 +27,23 @@ Open **Customize** in the sidebar → **Plugins** → **+ Add** → **From Local
 The repo is dual-format — the files are additive and don't conflict:
 
 - **Agent Plugins standard** ([agent-plugins.org](https://agent-plugins.org), v1.0.0): root `plugin.json` + `mcp.json` + `skills/`. Loaded natively by Cursor, and by the standard's launch clients (ChatGPT, Codex, GitHub Copilot, Kiro, VS Code) through their own install flows.
-- **Claude Code plugin**: `.claude-plugin/plugin.json` + `.mcp.json` + the same `skills/`. `.claude-plugin/marketplace.json` also makes the repo itself an installable marketplace: `/plugin marketplace add scrimba/<repo>` then `/plugin install scrimba-explain@scrimba`. Validate with `claude plugin validate .`.
+- **Claude Code plugin**: `.claude-plugin/plugin.json` + `.mcp.json` + the same `skills/`. `.claude-plugin/marketplace.json` also makes the repo itself an installable marketplace. Validate with `claude plugin validate .`.
 
-## Distribution channels
+## Install
 
-Once the repo is public on GitHub:
+**Cursor** — from the Cursor Marketplace, or **Customize → Plugins → + Add** and point it at this repo.
 
-| Channel | How |
-|---------|-----|
-| Cursor Marketplace | Submit at [cursor.com/marketplace/publish](https://cursor.com/marketplace/publish) (manual review; logo required) |
-| Claude Code | Works immediately via `/plugin marketplace add scrimba/<repo>`; optionally submit to the community marketplace at [platform.claude.com/plugins/submit](https://platform.claude.com/plugins/submit) |
-| Vercel `plugins` / skills.sh ecosystem | Works immediately via `npx plugins add scrimba/<repo>` (auto-installs into Claude Code, Cursor, Codex, Copilot, and 20+ agents); [skills.sh](https://skills.sh) leaderboard tracks installs |
-| MCP registries (server-level) | The remote server itself can be listed on the official [MCP Registry](https://registry.modelcontextprotocol.io) (needs `server.json` + domain verification, a scrimba.com-side task) and community registries (Smithery, Glama, PulseMCP, mcp.so, cursor.directory) |
+**Claude Code**:
+
+```
+/plugin marketplace add scrimba/explainer-mcp-plugin
+/plugin install scrimba-explain@scrimba
+```
+
+**Any supported agent** via the [`plugins`](https://skills.sh) installer (auto-detects Claude Code, Cursor, Codex, Copilot, and 20+ others):
+
+```sh
+npx plugins add scrimba/explainer-mcp-plugin
+```
+
+**Any MCP client without plugin support** — add the server directly: `https://scrimba.com/mcp/explain` (Streamable HTTP, no auth).
