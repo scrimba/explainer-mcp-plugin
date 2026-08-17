@@ -4,7 +4,7 @@ Connects your coding agent to Scrimba Video Explainer: allows you to ask your ag
 
 ## Install
 
-### $Claude Code
+### Claude Code
 
 ```
 /plugin marketplace add scrimba/explainer-mcp-plugin
@@ -24,8 +24,8 @@ Coming; not yet listed. Until then use the command above, or clone this repo and
 
 ### Plain MCP
 
-No plugin needed: add `https://scrimba.com/mcp/explain` (Streamable HTTP, no auth) to any MCP client. Same tools, minus the bundled skill.
+No plugin needed: add `https://scrimba.com/explain/pr/mcp` (Streamable HTTP, no auth) to any MCP client. Same tools, minus the bundled skill.
 
 ## What's in the plugin
 
-A remote MCP server with four tools (`start_explainer_stream` / `append_explainer_chunk` / `finish_explainer_stream`, plus `create_playlist` for courses) and a skill that tells the agent when to use them. The repo carries both agent-plugins.org and Claude Code manifests, so it loads natively in either ecosystem.
+A remote MCP server with three tools (`start_explainer_stream` / `append_explainer_chunk` / `finish_explainer_stream`) and a skill that tells the agent when to use them. The repo carries both agent-plugins.org and Claude Code manifests, so it loads natively in either ecosystem.

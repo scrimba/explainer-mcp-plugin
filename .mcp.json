@@ -2,7 +2,7 @@
   "mcpServers": {
     "scrimba-explain": {
       "type": "http",
-      "url": "https://scrimba.com/mcp/explain"
+      "url": "https://scrimba.com/explain/pr/mcp"
     }
   }
 }

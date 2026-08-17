@@ -3,7 +3,7 @@
   "mcpServers": {
     "scrimba-explain": {
       "type": "streamable-http",
-      "url": "https://scrimba.com/mcp/explain"
+      "url": "https://scrimba.com/explain/pr/mcp"
     }
   }
 }

@@ -1,6 +1,6 @@
 ---
 name: scrimba-explain
-description: Create a Scrimba video explainer — an instantly generated video with narration, animations, mermaid diagrams, LaTeX maths, and precisely composed code walkthroughs, rendered live on scrimba.com. Use when the user wants something explained visually or as a video, or asks for an explainer or walkthrough of code, a concept, a flow, an architecture, a git branch, a PR, or a diff. Also use for playlists or courses of lessons.
+description: Create a Scrimba video explainer — an instantly generated video with narration, animations, mermaid diagrams, LaTeX maths, and precisely composed code walkthroughs, rendered live on scrimba.com. Use when the user wants something explained visually or as a video, or asks for an explainer or walkthrough of code, a concept, a flow, an architecture, a git branch, a PR, or a diff.
 ---
 
 # Scrimba Explain
@@ -15,10 +15,7 @@ Scrimba Explain turns anything into a rich explainer with narration and visual a
 
 ## How to use it
 
-The `scrimba-explain` MCP server (bundled with this plugin) provides the tools:
-
-1. **One focused explainer**: call `start_explainer_stream`, then push content with `append_explainer_chunk`, and close with `finish_explainer_stream`. Scrimba renders the OPML you push live.
-2. **A playlist or course of lessons**: use `create_playlist` — you plan the curriculum and author every lesson through the same OPML streaming flow.
+The `scrimba-explain` MCP server (bundled with this plugin) provides the tools: call `start_explainer_stream`, then push content with `append_explainer_chunk`, and close with `finish_explainer_stream`. Scrimba renders the OPML you push live.
 
 ## The `start_explainer_stream` result IS the authoring contract (~50 KB)
 
