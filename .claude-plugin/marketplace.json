@@ -9,7 +9,7 @@
     {
       "name": "scrimba-explain",
       "source": "./",
-      "description": "Scrimba Video Explainer — ask your agent to explain any code, concept, architecture, git branch, or PR, and get an instant video with narration, animations, diagrams, maths, and diffs, rendered live at a shareable scrimba.com link.",
+      "description": "Explain by Scrimba — ask your agent to explain anything as an instant narrated slideshow: a concept, a document, an architecture, a codebase, a git branch or PR. Built live with animations, diagrams, maths, and code, at a shareable scrimba.com link.",
       "logo": "assets/logo.png"
     }
   ]
