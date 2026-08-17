@@ -2,7 +2,8 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "scrimba-explain",
   "version": "0.1.0",
-  "description": "Scrimba Video Explainer — ask your agent to explain anything as an instant video: a concept, a document, an architecture, a codebase, a git branch or PR. Generated live with narration, animations, diagrams, maths, and code, at a shareable scrimba.com link.",
+  "license": "MIT",
+  "description": "Explain by Scrimba — ask your agent to explain anything as an instant video: a concept, a document, an architecture, a codebase, a git branch or PR. Generated live with narration, animations, diagrams, maths, and code, at a shareable scrimba.com link.",
   "author": {
     "name": "Scrimba",
     "url": "https://scrimba.com"
