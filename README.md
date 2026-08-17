@@ -1,6 +1,6 @@
 # Explain by Scrimba — Agent Plugin
 
-Connects your agent to Explain by Scrimba: ask your agent to explain anything — a concept, a document, a process, a codebase, an architecture, a git branch or PR — and an instant narrated slideshow is generated with animations, diagrams, maths, images, code diffs, and more, rendered live at a shareable scrimba.com link.
+Connects your agent to Explain by Scrimba: ask your agent to explain anything — a concept, a document, a process, a codebase, an architecture, a git branch or PR — and a narrated slideshow is generated with animations, diagrams, maths, images, code diffs, and more, rendered live at a shareable scrimba.com link.
 
 Try prompts like:
 
