@@ -1,5 +1,5 @@
 ---
-name: scrimba-explain
+name: explain
 description: Create a Scrimba video explainer — an instantly generated video with narration, animations, mermaid diagrams, LaTeX maths, and precisely composed code walkthroughs, rendered live on scrimba.com. Use when the user wants something explained visually or as a video, or asks for an explainer or walkthrough of code, a concept, a flow, an architecture, a git branch, a PR, or a diff. Also use for playlists or courses of lessons.
 ---
 
