@@ -1,0 +1,43 @@
+name: Scrimba PR Explainer
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: PR number to explain when running manually
+        required: false
+        type: string
+
+permissions:
+  contents: read
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: scrimba-pr-explainer-${{ github.event.pull_request.number || inputs.pr_number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  explain:
+    if: github.event_name != 'pull_request' || github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      # The explainer is a helper, not a merge gate. When the agent can't
+      # build one, the PR comment says so and this check still passes.
+      - name: Create Scrimba PR explainer
+        continue-on-error: true
+        uses: scrimba/pr-explainer@main
+        with:
+          # allow-forks stays false because fork PRs can contain prompt
+          # injection: the agent that builds the explainer reads PR content
+          # with access to the checked-out repository and any secrets passed
+          # to this job. Only set it to true if you trust every fork PR that
+          # can reach this workflow.
+          allow-forks: false
+          pr-number: ${{ inputs.pr_number || '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SCRIMBA_PR_EXPLAINER_CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.SCRIMBA_PR_EXPLAINER_CLAUDE_CODE_OAUTH_TOKEN }}
